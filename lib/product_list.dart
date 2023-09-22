@@ -37,10 +37,10 @@ class _ProductListState extends State<ProductList> {
 
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Column(
           children: [
-            Row(
+            const Row(
               children: [
                 Text(
                   "Shoes 👟\nCollection",
@@ -79,14 +79,14 @@ class _ProductListState extends State<ProductList> {
                       },
                       child: Chip(
                         backgroundColor: selectedFilter == filter
-                            ? Color.fromRGBO(250, 220, 12, 1)
-                            : Color.fromRGBO(230, 247, 249, 1),
+                            ? const Color.fromRGBO(250, 220, 12, 1)
+                            : const Color.fromRGBO(230, 247, 249, 1),
                         label: Text(
                           filter,
-                          style: TextStyle(fontSize: 17),
+                          style: const TextStyle(fontSize: 17),
                         ),
                         padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                            const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       ),
                     ),
                   );
@@ -113,8 +113,8 @@ class _ProductListState extends State<ProductList> {
                       price: product['price'] as double,
                       image: product['imageUrl'] as String,
                       backgroundColor: index.isEven
-                          ? Color.fromRGBO(148, 194, 220, 1)
-                          : Color.fromRGBO(195, 208, 215, 1),
+                          ? const Color.fromRGBO(148, 194, 220, 1)
+                          : const Color.fromRGBO(195, 208, 215, 1),
                     ),
                   );
                 },

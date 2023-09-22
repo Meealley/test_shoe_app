@@ -17,7 +17,7 @@ class _CartPageState extends State<CartPage> {
     // final cart = Provider.of<CartProvider>(context).cart;
     return Scaffold(
         appBar: AppBar(
-          title: Text("Cart"),
+          title: const Text("Cart"),
         ),
         body: ListView.builder(
           itemCount: cart.length,
@@ -36,17 +36,17 @@ class _CartPageState extends State<CartPage> {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        title: Text(
+                        title: const Text(
                           "Delete product",
                           style: TextStyle(fontSize: 18),
                         ),
-                        content: Text('Are you sure you want to delete this?'),
+                        content: const Text('Are you sure you want to delete this?'),
                         actions: [
                           TextButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
-                              child: Text(
+                              child: const Text(
                                 "No",
                                 style: TextStyle(color: Colors.blue),
                               )),
@@ -57,7 +57,7 @@ class _CartPageState extends State<CartPage> {
                                     .removeProduct(cartItem);
                                 Navigator.of(context).pop();
                               },
-                              child: Text(
+                              child: const Text(
                                 "Yes",
                                 style: TextStyle(color: Colors.red),
                               ))
@@ -66,14 +66,14 @@ class _CartPageState extends State<CartPage> {
                     },
                   );
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.delete,
                   color: Colors.red,
                 ),
               ),
               title: Text(
                 cartItem['company'].toString(),
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text('Size : ${cartItem['size']}'),
             );

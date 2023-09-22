@@ -1,7 +1,7 @@
 final products = [
   {
     'id': "0",
-    'title': "Men\'s Shoes",
+    'title': "Men's Shoes",
     'price': 45.23,
     'sizes': [8, 9, 10, 11, 12],
     'imageUrl': 'assets/images/bal3.jpeg',
@@ -9,7 +9,7 @@ final products = [
   },
   {
     'id': "0",
-    'title': "Men\'s Shoes",
+    'title': "Men's Shoes",
     'price': 70.13,
     'sizes': [8, 9, 10, 11, 12],
     'imageUrl': 'assets/images/nike2.jpeg',
@@ -17,7 +17,7 @@ final products = [
   },
   {
     'id': "1",
-    'title': "Men\'s  Shoes",
+    'title': "Men's  Shoes",
     'price': 15.23,
     'sizes': [8, 9, 10, 11, 12],
     'imageUrl': 'assets/images/nike3.jpeg',
@@ -25,7 +25,7 @@ final products = [
   },
   {
     "id": "3",
-    'title': "Men\'s  Shoes",
+    'title': "Men's  Shoes",
     'price': 45.23,
     'sizes': [8, 9, 10, 11, 12],
     'imageUrl': 'assets/images/vuitton.jpeg',
@@ -33,7 +33,7 @@ final products = [
   },
   {
     "id": "5",
-    'title': "Men\'s  Shoes",
+    'title': "Men's  Shoes",
     'price': 300.23,
     'sizes': [8, 9, 10, 11, 12],
     'imageUrl': 'assets/images/addidas7.jpeg',

@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromRGBO(254, 206, 1, 1),
           ),
-          appBarTheme: AppBarTheme(
+          appBarTheme: const AppBarTheme(
               titleTextStyle: TextStyle(color: Colors.black, fontSize: 23)),
-          textTheme: TextTheme(
+          textTheme: const TextTheme(
             titleMedium: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: Provider(
-            create: (context) => "How are you doing!", child: HomePage()),
+            create: (context) => "How are you doing!", child: const HomePage()),
       ),
     );
   }

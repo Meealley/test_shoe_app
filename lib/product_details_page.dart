@@ -24,38 +24,38 @@ class _ProductDetailsState extends State<ProductDetails> {
         "company": widget.product['company'],
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text("Product added successfully"),
         ),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text("Please select a size"),
         ),
       );
     }
-    print("Add to cart clicked");
+    // print("Add to cart clicked");
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Details"),
+        title: const Text("Details"),
       ),
       body: Column(
         children: [
           Text(
             widget.product['title'] as String,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
           ),
-          Spacer(),
+          const Spacer(),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Image.asset(widget.product['imageUrl'] as String),
           ),
-          Spacer(
+          const Spacer(
             flex: 2,
           ),
           Container(
@@ -70,9 +70,10 @@ class _ProductDetailsState extends State<ProductDetails> {
               children: [
                 Text(
                   '\$${widget.product['price']}',
-                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 32, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 17),
+                const SizedBox(height: 17),
                 SizedBox(
                   height: 50,
                   child: ListView.builder(
@@ -88,14 +89,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                               setState(() {
                                 selectSize = size;
                               });
-                              print("Tappout");
+                              // print("Tappout");
                             },
                             child: Chip(
                               label: Text(
                                 size.toString(),
                               ),
                               backgroundColor: selectSize == size
-                                  ? Color.fromRGBO(250, 220, 12, 1)
+                                  ? const Color.fromRGBO(250, 220, 12, 1)
                                   : null,
                             ),
                           ),
@@ -109,8 +110,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.amber[300],
                           foregroundColor: Colors.black,
-                          minimumSize: Size(double.infinity, 50)),
-                      child: Text(
+                          minimumSize: const Size(double.infinity, 50)),
+                      child: const Text(
                         "Add to Cart ",
                         style: TextStyle(fontSize: 20),
                       )),

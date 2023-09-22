@@ -21,7 +21,7 @@ class ProductCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: backgroundColor,
       ),
-      margin: EdgeInsets.symmetric(vertical: 16),
+      margin: const EdgeInsets.symmetric(vertical: 16),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
